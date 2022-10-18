@@ -23,7 +23,6 @@ export class AgregarComponent  {
 
   agregar(){
     if(this.nuevo.nombre.trim().length === 0){return;}
-
       //this.onNuevoPersonaje.emit(this.nuevo);
       this.dbzService.agregarPersonaje(this.nuevo);
       this.nuevo = {
